@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTURE TAGS HOME</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('file:///C:/Users/baran/OneDrive/Desktop/MY_PROJECT/IMAGES/HOMEBACKGROUND1.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            image-rendering: crisp-edges;
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 50px 20px; /* Adjusted margin for both top and right */
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-container">
+        <div>
+            <h2>Enter Text</h2>
+            <button onclick="openTextPage()">Click Here</button>
+        </div>
+        <div>
+            <h2>Insert Image</h2>
+            <button onclick="openImagePage()">Click Here</button>
+        </div>
+    </div>
+
+    <script>
+        function openTextPage() {
+            window.open('text.html', '_blank');
+            // Add your custom functionality here
+        }
+
+        function openImagePage() {
+            window.open('image.html', '_blank');
+            // Add your custom functionality here
+        }
+    </script>
+</body>
+
+</html>
